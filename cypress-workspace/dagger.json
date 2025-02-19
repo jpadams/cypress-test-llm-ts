@@ -1,0 +1,7 @@
+{
+  "name": "cypress-workspace",
+  "engineVersion": "v0.15.4",
+  "sdk": {
+    "source": "typescript"
+  }
+}
