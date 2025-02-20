@@ -13,6 +13,10 @@ Once in shell, run:
 - `llm` to ensure you're hooked up to your LLM
 - `cypress-test-update https://github.com/jpadams/hello-dagger-ts`
 
+
+https://github.com/user-attachments/assets/0432be8b-08bb-4b2f-9409-f0175cc5bbc2
+
+
 After getting a successful test built try:
 - `cypress-test-update https://github.com/jpadams/hello-dagger-ts | terminal`
 and check out your new Cypress test in `cypress/e2e/`.
