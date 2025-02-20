@@ -12,14 +12,22 @@ Start a dev Dagger Engine with LLM support using:
 https://github.com/shykes/melvin/blob/main/README.md
 
 $ Load the module into Dagger Shell:
-```cd cypress-test-writer```
-```dagger shell```
+```
+cd cypress-test-writer
+```
+```
+dagger shell
+```
 
 ⋈ Run test update function:
-```cypress-test-update https://github.com/jpadams/hello-dagger-ts```
+```
+cypress-test-update https://github.com/jpadams/hello-dagger-ts
+```
 
 ⋈ Check out your newly written Cypress test in `cypress/e2e/`.
-```cypress-test-update https://github.com/jpadams/hello-dagger-ts | terminal```
+```
+cypress-test-update https://github.com/jpadams/hello-dagger-ts | terminal
+```
 
 *note: Increase verbosity to 3 or 4 and/or view in Dagger Cloud for best results*
 
