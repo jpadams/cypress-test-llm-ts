@@ -12,7 +12,7 @@ Start a dev Dagger Engine with LLM support using:
 https://github.com/shykes/melvin/blob/main/README.md
 
 Load the module into Dagger Shell:
-<pre>$ <code>cd cypress-test-writer</pre></code>
+<pre>$</pre><code>cd cypress-test-writer</code>
 <pre>$ <code>dagger shell</pre></code>
 
 With Dagger Shell ⋈ run test update function:
