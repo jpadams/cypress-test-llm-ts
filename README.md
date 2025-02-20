@@ -9,7 +9,8 @@ https://github.com/user-attachments/assets/0432be8b-08bb-4b2f-9409-f0175cc5bbc2
 
 ### How do I try it?
 Start a dev Dagger Engine with LLM support using:
-https://github.com/shykes/melvin/blob/main/README.md
+- https://github.com/shykes/melvin/blob/main/README.md#1-install-dagger
+- https://github.com/shykes/melvin/blob/main/README.md#2configure-llm-endpoints
 
 $ Load the module into Dagger Shell:
 ```
