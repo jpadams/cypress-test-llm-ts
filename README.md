@@ -1,18 +1,17 @@
-# Demo LLM Agent Cypress Test Writer in Dagger TypeScript SDK ✍️🤖🧪
+# Demo LLM Agent Cypress Test Writer in Dagger TypeScript SDK ✍️ 🤖🧪
 
 ## Run in `dagger shell` and let the LLM use Dagger tools to write a new Cypress test!
 
+### What is this?
+This module is an example agent that compares two branches in `git` for a change and creates a [Cypress](https://www.cypress.io) test to cover the change. It can run anywhere with its own containerized runtime and automatic caching thanks to [Dagger](https://github.com/dagger.io). I chose to implement this in the Dagger TypeScript SDK, but you can use any of the SDKs (e.g. Python, Go, PHP, Java, Elixir, ...) and even mix and match modules built by the Community (see https://daggerverse.dev). This demo relies on an experimental pre-release of Dagger with support for plugging micro-agent implementations into LLM "brains".
+
+### How do I try it?
 Start a dev Dagger Engine with LLM support using:
 https://github.com/shykes/melvin/blob/main/README.md
 
 Load the module into Dagger Shell:
 - `cd cypress-test-writer`
 - `dagger shell`
-
-Once in shell, run:
-- `llm` to ensure you're hooked up to your LLM
-- `cypress-test-update https://github.com/jpadams/hello-dagger-ts`
-
 
 https://github.com/user-attachments/assets/0432be8b-08bb-4b2f-9409-f0175cc5bbc2
 
