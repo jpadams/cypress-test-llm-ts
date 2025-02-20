@@ -11,23 +11,22 @@ https://github.com/user-attachments/assets/0432be8b-08bb-4b2f-9409-f0175cc5bbc2
 Start a dev Dagger Engine with LLM support using:
 https://github.com/shykes/melvin/blob/main/README.md
 
-Load the module into Dagger Shell:
-<pre><code><div style="user-select: none; display: inline;">$ </div>cd cypress-test-writer</pre></code>
-<pre>$ <code>dagger shell</pre></code>
+$ Load the module into Dagger Shell:
+- `cd cypress-test-writer`
+- `dagger shell`
 
-With Dagger Shell ⋈ run test update function:
-<pre>⋈ <code>cypress-test-update https://github.com/jpadams/hello-dagger-ts</pre></code>
+⋈ Run test update function:
+- `cypress-test-update https://github.com/jpadams/hello-dagger-ts`
 
-Check out your newly written Cypress test in `cypress/e2e/`.
-<pre>⋈ <code>cypress-test-update https://github.com/jpadams/hello-dagger-ts | terminal</pre></code>
+⋈ Check out your newly written Cypress test in `cypress/e2e/`.
+- `cypress-test-update https://github.com/jpadams/hello-dagger-ts | terminal`
 
 *note: Increase verbosity to 3 or 4 and/or view in Dagger Cloud for best results*
 
 #### Fun to try:
 - in `hello-dagger/` notice you're on the `green` branch, run `git diff main` this is what is used to build the new test
 - check out the `prompt.txt` in `cypress-test-update/`
-- `hello-dagger/.dagger` is present. The app is Daggerized! In the directory try fun things like:
-<pre>$ <code>dagger shell -c 'build | up'</pre></code>
+- `hello-dagger/.dagger` is present. The app is Daggerized! In the directory try fun things like: `dagger shell -c 'build | up'`
 
 #### Notes:
 - note the `contest:e2e` target in the `package.json`
