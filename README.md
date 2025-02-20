@@ -5,6 +5,8 @@
 ### What is this?
 This module is an example agent that compares two branches in `git` for a UI change and creates a [Cypress](https://www.cypress.io) test to cover the change. It can run anywhere with its own containerized runtime and automatic caching thanks to [Dagger](https://github.com/dagger.io). I chose to implement this in the Dagger TypeScript SDK, but you can use any of the SDKs (e.g. Python, Go, PHP, Java, Elixir, ...) and even mix and match modules built by the Community (see https://daggerverse.dev). This demo relies on an experimental pre-release of Dagger with support for plugging micro-agent implementations into LLM "brains".
 
+https://github.com/user-attachments/assets/0432be8b-08bb-4b2f-9409-f0175cc5bbc2
+
 ### How do I try it?
 Start a dev Dagger Engine with LLM support using:
 https://github.com/shykes/melvin/blob/main/README.md
@@ -12,14 +14,14 @@ https://github.com/shykes/melvin/blob/main/README.md
 Load the module into Dagger Shell:
 - `cd cypress-test-writer`
 - `dagger shell`
+
 Run test update function:
 - `cypress-test-update https://github.com/jpadams/hello-dagger-ts`
+
 Check out your newly written Cypress test in `cypress/e2e/`.
 - `cypress-test-update https://github.com/jpadams/hello-dagger-ts | terminal`
 
 note: Increase verbosity to 3 or 4 and/or view in Dagger Cloud for best results :)
-
-https://github.com/user-attachments/assets/0432be8b-08bb-4b2f-9409-f0175cc5bbc2
 
 Fun to try:
 - in `hello-dagger/` notice you're on the `green` branch, run `git diff main` this is what is used to build the new test
@@ -31,4 +33,4 @@ Notes:
 - note the `contest:e2e` target in the `package.json`
   - I used `concurrently` to manage running the dev server and Cypress in one command
   - I used `--success first` to ensure the test exit code propagated, not the SIGTERM shutdown of the dev server
-- I am not a TypeScript dev, so there are likely much better ways to do this :D
+- I am not a TypeScript dev, so there are likely much better ways to do certain things 😁
