@@ -15,7 +15,7 @@ Load the module into Dagger Shell:
 - `cd cypress-test-writer`
 - `dagger shell`
 
-Run test update function:
+With Dagger Shell ⋈ run test update function:
 - `cypress-test-update https://github.com/jpadams/hello-dagger-ts`
 
 Check out your newly written Cypress test in `cypress/e2e/`.
