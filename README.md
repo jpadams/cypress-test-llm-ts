@@ -35,7 +35,7 @@ cypress-test-update https://github.com/jpadams/hello-dagger-ts | terminal
 #### Fun to try:
 - in `hello-dagger/` notice you're on the `green` branch, run `git diff main` this is what is used to build the new test
 - check out the `prompt.txt` in `cypress-test-update/`
-- `hello-dagger/.dagger` is present. The app is Daggerized! In the directory try fun things like: `dagger shell -c 'build | up'`
+- Note that a `dagger.json` is  present. The app is Daggerized! In the directory try fun things like: `dagger shell -c 'build | up'` (Dagger implementation inside of `.dagger/src/index.ts`)
 
 #### Notes:
 - note the `contest:e2e` target in the `package.json`
