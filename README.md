@@ -12,24 +12,24 @@ Start a dev Dagger Engine with LLM support using:
 https://github.com/shykes/melvin/blob/main/README.md
 
 Load the module into Dagger Shell:
-- `cd cypress-test-writer`
-- `dagger shell`
+<pre><code>$ cd cypress-test-writer</pre></code>
+<pre><code>$ dagger shell</pre></code>
 
 With Dagger Shell ⋈ run test update function:
-- `cypress-test-update https://github.com/jpadams/hello-dagger-ts`
+<pre><code>⋈ cypress-test-update https://github.com/jpadams/hello-dagger-ts</pre></code>
 
 Check out your newly written Cypress test in `cypress/e2e/`.
-- `cypress-test-update https://github.com/jpadams/hello-dagger-ts | terminal`
+<pre><code>⋈ cypress-test-update https://github.com/jpadams/hello-dagger-ts | terminal</pre></code>
 
-note: Increase verbosity to 3 or 4 and/or view in Dagger Cloud for best results :)
+*note: Increase verbosity to 3 or 4 and/or view in Dagger Cloud for best results*
 
-Fun to try:
+#### Fun to try:
 - in `hello-dagger/` notice you're on the `green` branch, run `git diff main` this is what is used to build the new test
 - check out the `prompt.txt` in `cypress-test-update/`
-- `hello-dagger/.dagger` is present. The app is Daggerized! In the directory try:
-  `dagger shell -c 'build | up'` and other fun things :)
+- `hello-dagger/.dagger` is present. The app is Daggerized! In the directory try fun things like:
+<pre><code>$ dagger shell -c 'build | up'</pre></code>
 
-Notes:
+#### Notes:
 - note the `contest:e2e` target in the `package.json`
   - I used `concurrently` to manage running the dev server and Cypress in one command
   - I used `--success first` to ensure the test exit code propagated, not the SIGTERM shutdown of the dev server
