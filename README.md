@@ -9,15 +9,14 @@ https://github.com/user-attachments/assets/0432be8b-08bb-4b2f-9409-f0175cc5bbc2
 
 ### How do I try it?
 Start a dev Dagger Engine with LLM support using:
-- https://github.com/shykes/melvin/blob/main/README.md#1-install-dagger
-- https://github.com/shykes/melvin/blob/main/README.md#2configure-llm-endpoints
+https://docs.dagger.io/ai-agents#initial-setup
 
 $ Load the module into Dagger Shell:
 ```
 cd cypress-test-writer
 ```
 ```
-dagger shell
+dagger
 ```
 
 ⋈ Run test update function:
@@ -41,4 +40,4 @@ cypress-test-update https://github.com/jpadams/hello-dagger-ts | terminal
 - note the `contest:e2e` target in the `package.json`
   - I used `concurrently` to manage running the dev server and Cypress in one command
   - I used `--success first` to ensure the test exit code propagated, not the SIGTERM shutdown of the dev server
-- I am not a TypeScript dev, so there are likely much better ways to do certain things 😁
+- I am not really a TypeScript dev, so there are likely much better ways to do certain things 😁
