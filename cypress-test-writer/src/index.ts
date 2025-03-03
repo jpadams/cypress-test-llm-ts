@@ -31,7 +31,7 @@ export class CypressTestWriter {
       .withCypressWorkspace(before)
       .withPromptVar("diff", diff)
       .withPromptFile(dag.currentModule().source().file("prompt.txt"))
-      .CypressWorkspace();
+      .cypressWorkspace();
     return after.container();
   }
 }
